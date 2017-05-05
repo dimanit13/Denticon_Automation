@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Login Denticon]" allow-return-values="true">
+  <parameter name="url" value="http://dev.denticon.com/aspx/home/login.aspx"/>
+  <parameter name="browserType" value="ff"/>
+  <test name="Login">
+    <parameter name="url" value="http://dev.denticon.com/aspx/home/login.aspx"/>
+    <parameter name="browserType" value="ff"/>
+    <classes>
+      <class name="com.planet.denticon.SeleniumSuite"/>
+      <class name="com.planet.denticon.login.Login"/>
+      <class name="com.planet.denticon.login.Logout"/>
+    </classes>
+  </test> <!-- Login -->
+</suite> <!-- Failed suite [Login Denticon] -->
