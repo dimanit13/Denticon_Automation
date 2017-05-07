@@ -8,7 +8,7 @@
 		<classes>
 			<class name="com.planet.denticon.SeleniumSuite" />
 			<class name="com.planet.denticon.login.Login" />
-			<class name="com.planet.denticon.charting.SPatientCharting " />
+			<class name="com.planet.denticon.charting.SPatientCharting" />
 			<class name="com.planet.denticon.login.Logout" />
 		</classes>
 	</test>
