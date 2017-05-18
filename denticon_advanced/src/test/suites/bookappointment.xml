@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Login Denticon" allow-return-values="true" verbose="1">
+<test name="Login" preserve-order="true">
+		<parameter name="browserType" value="chrome" />
+		<parameter name="url"
+			value="http://dev.denticon.com/aspx/home/login.aspx" />
+		<classes>
+			<class name="com.planet.denticon.SeleniumSuite" />
+			<class name="com.planet.denticon.login.Login" />
+			<class name="com.planet.denticon.scheduler.AddAppointment" />
+			<class name="com.planet.denticon.login.Logout" />
+		</classes>
+	</test>
+	</suite> 
