@@ -4,10 +4,14 @@ import org.openqa.selenium.By;
 
 public interface IPatient {
 	
+		By TAB_PATIENT=By.id("MenuBar_aMenuPatient");
+		By LNK_ADD_NEW_PATIENT=By.linkText("Add New Patient");
 		By Patient_Info_Title=By.xpath("//*[@id='HelpBar_SpanPageTitle']");
+		
 		By Personal_Info_Title=By.xpath("//*[@id='Table5']/tbody/tr[1]/td");
 		By SLC_NickTitle=By.xpath("//*[@id='Table5']/tbody/tr[2]/td[1]");
-		By TXT_Nick_I= By.id("Title_Title");
+		
+		By SLC_TITLE_NICKNAME= By.id("Title_Title");
 		By TXT_Nick= By.id("txtNickName");
 		By CHK_Patient=By.xpath("//*[@id='btnCheckPat']");
 		
