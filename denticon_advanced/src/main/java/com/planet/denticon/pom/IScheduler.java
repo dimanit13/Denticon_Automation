@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 
 public interface IScheduler {
 
+	/////////////////////////Add/Edit Appointment///////////////////////////////////
 	By TAB_SCHEDULER=By.id("MenuBar_aMenuScheduler");
 	By TAB_SCHEDULER_DD=By.id("aMenuScheduler");
 	By ICON_CALENDER=By.id("ApptMenu_imgDate");
@@ -23,4 +24,8 @@ public interface IScheduler {
 	By TXT_PATIENTSEARCH=By.id("txtSearch");
 	By BTN_SEARCH=By.id("cmdSearch");
 	By SLC_FIRST_PATIENT=By.id("1");
+	
+	///////////////Find Appointment/////////////////////////////////////////////////
+	By LNK_FIND_APPT=By.id("ApptMenu_ancFindAppt");
+	By EXISTING_APPOINTMENT=By.id("1791");
 }

@@ -10,7 +10,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.planet.denticon.DriverManager;
 import com.relevantcodes.extentreports.ExtentReports;
@@ -125,6 +127,18 @@ public class CommonMethods {
 		}
 
 		return result;
+	}
+	public static boolean isAlertPresent(){
+	    boolean foundAlert = false;
+	    WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), 20);
+	    try {
+	        wait.until(ExpectedConditions.alertIsPresent());
+	        DriverManager.getDriver().switchTo().alert().accept();
+	        foundAlert = true;
+	    } catch (Exception eTO) {
+	        foundAlert = false;
+	    }
+	    return foundAlert;
 	}
 
 }
