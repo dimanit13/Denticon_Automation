@@ -18,7 +18,9 @@ public class ViewReport {
 		dailyReport();
 	}
 	public void dailyReport(){
-		try{}
+		try{
+			//test
+		}
 		catch(Exception e){}
 	}
 }
