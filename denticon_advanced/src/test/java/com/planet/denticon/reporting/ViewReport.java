@@ -18,7 +18,9 @@ public class ViewReport {
 		dailyReport();
 	}
 	public void dailyReport(){
-		try{}
+		try{
+		System.out.println("in try block");
+		}
 		catch(Exception e){}
 	}
 }
